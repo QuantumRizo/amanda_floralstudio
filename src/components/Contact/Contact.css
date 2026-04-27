@@ -1,6 +1,6 @@
 .contact {
   padding: 10rem 0;
-  background-color: #f9f9f9;
+  background-color: #fcfcfc;
 }
 
 .contact-header {
@@ -14,73 +14,75 @@
   margin-top: 1rem;
 }
 
-.contact-content {
+.contact-buttons {
   display: flex;
-  gap: 8rem;
+  justify-content: center;
+  gap: 3.5rem;
+  flex-wrap: wrap;
+  padding: 2rem 0;
 }
 
-.contact-info {
-  flex: 1;
+.social-icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
 }
 
-.info-block {
-  margin-bottom: 3rem;
-}
-
-.info-block h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: var(--color-mauve);
-}
-
-.info-block p {
-  color: #666;
-  line-height: 1.8;
-}
-
-.contact-form {
-  flex: 1.5;
+.social-btn {
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 1.2rem;
-  border: 1px solid #ddd;
-  background: white;
-  font-family: var(--font-sans);
-  font-size: 1rem;
-  transition: var(--transition);
-  border-radius: 4px;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: var(--color-mauve);
-}
-
-.submit-btn {
-  background-color: var(--color-mauve);
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
   color: white;
-  padding: 1.2rem;
-  font-size: 1rem;
-  font-weight: 600;
-  border-radius: 4px;
-  transition: var(--transition);
-  margin-top: 1rem;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-.submit-btn:hover {
-  background-color: var(--color-mauve-dark);
+.social-btn.whatsapp {
+  background-color: #25D366;
+  box-shadow: 0 12px 25px rgba(37, 211, 102, 0.25);
 }
 
-@media (max-width: 992px) {
-  .contact-content {
-    flex-direction: column;
-    gap: 4rem;
+.social-btn.instagram {
+  background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+  box-shadow: 0 12px 25px rgba(193, 53, 132, 0.25);
+}
+
+.social-btn.instagram .social-icon {
+  filter: brightness(0) invert(1);
+}
+
+.social-btn:hover {
+  transform: translateY(-10px) scale(1.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.social-btn:active {
+  transform: translateY(-4px) scale(1);
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 6rem 0;
+  }
+  
+  .contact-header {
+    margin-bottom: 3rem;
+  }
+
+  .contact-buttons {
+    gap: 2rem;
+  }
+  
+  .social-btn {
+    width: 80px;
+    height: 80px;
+  }
+
+  .social-icon {
+    width: 32px;
+    height: 32px;
   }
 }
