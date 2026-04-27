@@ -1,11 +1,9 @@
-import './About.css';
-
 const About = () => {
   return (
     <section id="sobre-nosotros" className="about">
       <div className="container about-container">
         <div className="about-image-side">
-          <img src="/example.png" alt="Nuestra Historia" className="about-img" />
+          <img src="/sobrenosotros.jpeg" alt="Nuestra Historia" className="about-img" />
         </div>
         <div className="about-text-side">
           <h2 className="section-title">Sobre Nosotros</h2>

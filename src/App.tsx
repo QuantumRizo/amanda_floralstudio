@@ -1,9 +1,9 @@
-import Navbar from './components/Navbar/Navbar';
-import Hero from './components/Hero/Hero';
-import Ramos from './components/Ramos/Ramos';
-import About from './components/About/About';
-import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/Footer';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Ramos from './components/Ramos';
+import About from './components/About';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 import './index.css';
 
 function App() {

@@ -4,7 +4,7 @@ const Hero = () => {
       <div className="container hero-container">
         <div className="hero-content">
           <div className="hero-logo">
-            <img src="/logo.webp" alt="Amanda Studio Logo" className="hero-logo-img" />
+            <img src="/logo.png" alt="Amanda Studio Logo" className="hero-logo-img" />
           </div>
           <h1 className="hero-title">
             Lo que se ama <br />
