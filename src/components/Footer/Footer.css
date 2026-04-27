@@ -1,0 +1,63 @@
+.footer {
+  background-color: var(--color-bg-dark);
+  padding: 5rem 0;
+  color: white;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo .logo-letter {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-logo p {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.footer-links {
+  display: flex;
+  gap: 3rem;
+}
+
+.footer-icon-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  opacity: 0.6;
+  transition: var(--transition);
+}
+
+.footer-icon-link:hover {
+  opacity: 1;
+}
+
+.footer-social-icon {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1); /* Makes SVGs white to match the footer text color */
+}
+
+.copyright {
+  font-size: 0.8rem;
+  opacity: 0.4;
+  margin-top: 2rem;
+}
